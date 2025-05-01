@@ -6,28 +6,28 @@
       <h2 style="color: #333; margin-top: 0; margin-bottom: 15px; font-size: 24px;">{{ $json['Job Title'] }}</h2>
 
       <div style="margin-bottom: 20px; font-size: 16px;">
-        <span style="margin-right: 15px;">📍 {{ $json['Location'] }}</span>
-        <span style="margin-right: 15px;">💼 {{ $json['Temp or Perm'] }}</span>
-        <span>💷 {{ $json['Salary'] }}</span>
+        <span style="margin-right: 15px;">📍$input.first().json.Location</span>
+        <span style="margin-right: 15px;">💼 $input.first().json['Temp or Perm']</span>
+        <span>💷 $input.first().json.Salary</span>
       </div>
 
       <div style="margin-bottom: 20px;">
         <h3 style="color: #444; margin-bottom: 10px;">About the Role</h3>
-        <p style="line-height: 1.6;">{{ $json['Description'] }}</p>
+        <p style="line-height: 1.6;">$input.first().json.Description</p>
       </div>
 
       <div style="margin-bottom: 20px;">
         <h3 style="color: #444; margin-bottom: 10px;">Requirements</h3>
-        <p style="line-height: 1.6;">{{ $json['Requirements'] }}</p>
+        <p style="line-height: 1.6;">$input.first().json.Requirements</p>
       </div>
 
       <div style="background: #f8f9fa; padding: 20px; border-radius: 6px;">
         <h3 style="color: #444; margin-top: 0;">How to Apply</h3>
-        <a href="/apply-now?job={{ $json['Job Title'] }}&ref=VET-3791" style="display: inline-block; background: #0066cc; color: white; padding: 12px 24px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; margin: 10px 0; text-decoration: none;">Apply Now</a>
+        <a href="/apply-now?job={{ $json['Job Title'] }}&ref=VET-4108" style="display: inline-block; background: #0066cc; color: white; padding: 12px 24px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; margin: 10px 0; text-decoration: none;">Apply Now</a>
         
         <ul style="padding-left: 20px; margin: 10px 0;">
           <li style="margin-bottom: 8px;">Send your CV to mark@strive-talent.co.uk</li>
-          <li style="margin-bottom: 8px;">Job Reference: {{ $json['Job Title'] }} {{ $json['Location'] }}</li>
+          <li style="margin-bottom: 8px;">Job Reference: $input.first().json['Job Title'] $input.first().json.Location</li>
         </ul>
         <p style="margin-top: 15px;">Or call us on 0203 807 3141 for a confidential discussion.</p>
       </div>
@@ -37,28 +37,28 @@
       <h2 style="color: #333; margin-top: 0; margin-bottom: 15px; font-size: 24px;">{{ $json['Job Title'] }}</h2>
 
       <div style="margin-bottom: 20px; font-size: 16px;">
-        <span style="margin-right: 15px;">📍 {{ $json['Location'] }}</span>
-        <span style="margin-right: 15px;">💼 {{ $json['Temp or Perm'] }}</span>
-        <span>💷 {{ $json['Salary'] }}</span>
+        <span style="margin-right: 15px;">📍$input.first().json.Location</span>
+        <span style="margin-right: 15px;">💼 $input.first().json['Temp or Perm']</span>
+        <span>💷 $input.first().json.Salary</span>
       </div>
 
       <div style="margin-bottom: 20px;">
         <h3 style="color: #444; margin-bottom: 10px;">About the Role</h3>
-        <p style="line-height: 1.6;">{{ $json['Description'] }}</p>
+        <p style="line-height: 1.6;">$input.first().json.Description</p>
       </div>
 
       <div style="margin-bottom: 20px;">
         <h3 style="color: #444; margin-bottom: 10px;">Requirements</h3>
-        <p style="line-height: 1.6;">{{ $json['Requirements'] }}</p>
+        <p style="line-height: 1.6;">$input.first().json.Requirements</p>
       </div>
 
       <div style="background: #f8f9fa; padding: 20px; border-radius: 6px;">
         <h3 style="color: #444; margin-top: 0;">How to Apply</h3>
-        <a href="/apply-now?job={{ $json['Job Title'] }}&ref=VET-3791" style="display: inline-block; background: #0066cc; color: white; padding: 12px 24px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; margin: 10px 0; text-decoration: none;">Apply Now</a>
+        <a href="/apply-now?job={{ $json['Job Title'] }}&ref=VET-4108" style="display: inline-block; background: #0066cc; color: white; padding: 12px 24px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; margin: 10px 0; text-decoration: none;">Apply Now</a>
         
         <ul style="padding-left: 20px; margin: 10px 0;">
           <li style="margin-bottom: 8px;">Send your CV to mark@strive-talent.co.uk</li>
-          <li style="margin-bottom: 8px;">Job Reference: {{ $json['Job Title'] }} {{ $json['Location'] }}</li>
+          <li style="margin-bottom: 8px;">Job Reference: $input.first().json['Job Title'] $input.first().json.Location</li>
         </ul>
         <p style="margin-top: 15px;">Or call us on 0203 807 3141 for a confidential discussion.</p>
       </div>
