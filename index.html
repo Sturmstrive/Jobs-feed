@@ -1,8 +1,10 @@
+const timestamp = new Date().getTime().toString().slice(-4);
+
 const fullHTML = `
 <h1>Current Job Openings</h1>
 <div style="max-width: 800px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
-  ${items.map(item => {  
-    const jobRef = `VET-${new Date().getTime().toString().slice(-4)}`;  
+  ${items.map(item => {
+    const jobRef = `VET-${timestamp}`;
     return `
     <div style="background: #ffffff; border: 1px solid #e1e1e1; border-radius: 8px; padding: 25px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
       <h2 style="color: #333; margin-top: 0; margin-bottom: 15px; font-size: 24px;">Vet Surgeon</h2>
